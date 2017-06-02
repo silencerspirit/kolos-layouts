@@ -20,6 +20,8 @@ var gulp           = require('gulp'),
 gulp.task('scripts', function() {
 	return gulp.src([
 		'libs/jquery/dist/jquery.min.js',
+		'libs/popup/dist/jquery.magnific-popup.min.js',
+		'libs/input-mask/jquery.inputmask.js',
 		'js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
