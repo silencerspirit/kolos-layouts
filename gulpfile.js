@@ -22,6 +22,7 @@ gulp.task('scripts', function() {
 		'libs/jquery/dist/jquery.min.js',
 		'libs/popup/dist/jquery.magnific-popup.min.js',
 		'libs/input-mask/jquery.inputmask.js',
+		'libs/tabs-ui/jquery-ui.min.js',
 		'js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

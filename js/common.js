@@ -1,7 +1,7 @@
 $(function() {
 
 	//Кастомизированный Select
-	$('.slct').click(function(){
+	$('.slct, #reg-d').click(function(){
 		var dropBlock = $(this).parent().find('.drop');
 		
 		// Если выпадающий блок скрыт то делаем его видимым
@@ -15,7 +15,7 @@ $(function() {
 				var selectResult = $(this).html();
 				var selectVal = $(this).attr('data-value');
 
-				$(this).closest('div').find('.slct').removeClass('active').html(selectResult);
+				$(this).closest('div').find('.slct, #reg-d').removeClass('active').html(selectResult);
 				$(this).closest('div').find('input').val(selectVal);
 				dropBlock.slideUp();
 			});
@@ -55,4 +55,17 @@ $(function() {
 	// input mask
 	$('#phone-mask').inputmask("+7(999)999-99-99");
 
+	// tabs
+	$(".tab-item").not(":first").hide();
+	$(".tab").click(function() {
+		$(".tab").removeClass("active-tab").eq($(this).index()).addClass("active-tab");
+		$(".tab-item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active-tab");
+
+	var checkIcon = "<i class='fa fa-check' aria-hidden='true'></i>";
+	$('#reg-d.checked-f').append(checkIcon);
+	var errCheckedIcon = "<i class='fa fa-times' aria-hidden='true'></i>"
+	$('#reg-d.err-checked-f').append(errCheckedIcon);
+
 });
+

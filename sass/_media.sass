@@ -42,6 +42,12 @@
 		padding: 0 15px
 	.btnmg
 		margin-left: 10px
+	.info-org
+		flex-direction: column
+		justify-content: flex-start
+	.leg-ad-org,
+	.act-ad-org
+		width: 100%
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -186,6 +192,14 @@
 				left: 5px
 	.t-rus
 		font-size: 22px
+	.tabs-h
+		.tab.active-tab
+			display: block
+		.tab
+			display: none
+	.r-plnt
+		font-size: 22px
+		white-space: nowrap
 
 @media only screen and (max-width : 640px)
 	//
@@ -224,6 +238,23 @@
 		margin-left: 0
 		&:before
 			display: none
+	.form-group
+		flex-wrap: wrap
+		flex-direction: column
+		justify-content: flex-start
+		align-items: flex-start
+		label
+			display: block
+		.reg-slct,
+		.reg-input-t,
+		.reg-area-t
+			width: 100%
+	.r-plnt
+		font-size: 18px
+		margin-left: 0
+		&:before
+			display: none
+
 
 
 /* Custom, iPhone Retina */

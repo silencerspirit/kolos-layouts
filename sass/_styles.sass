@@ -330,6 +330,8 @@ body
 	padding-top: 25px
 	white-space: nowrap
 	margin-bottom: 208px
+.wn
+	white-space: normal
 
 .bann-flex-w
 	margin: 0 auto
@@ -385,6 +387,21 @@ body
 		position: absolute
 		bottom: -15px
 		left: -94px
+		width: 90px
+		height: 73px
+		background-image: url(../img/icon-sprite.png)
+		background-repeat: no-repeat
+		background-position: 0 0
+.r-plnt
+	border-bottom: none
+	position: relative
+	font-family: $df
+	font-size: 26px
+	&:before
+		content: ''
+		position: absolute
+		bottom: -6px
+		left: -112px
 		width: 90px
 		height: 73px
 		background-image: url(../img/icon-sprite.png)
@@ -724,6 +741,197 @@ a.us-btn
 .inmgrb
 	margin-left: 12px
 
+// Tabs
+.tabs-h
+	list-style-type: none
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	margin: 36px 0 0 4px
+	li
+		display: inline-block
+		text-align: center
+		border-top: 3px solid transparent
+		padding: 12px 0 0 0
+		flex-basis: 213px
+		p
+			display: inline-block
+			font-size: 14px
+			line-height: 18px
+			color: #3a3a3a
+			text-align: center
+			span
+				display: block
+	.active-tab
+		border-top: 3px solid #f99300
+		p
+			color: #f89201
+
+.info-org
+	width: 100%
+	position: relative
+	margin-top: 33px
+	padding-left: 5px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: wrap
+.leg-ad-org
+	display: inline-block
+	position: relative
+	width: 500px / 1140px * 100%
+.form-group
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	margin: 16px 0
+	label
+		font-size: 13px
+		color: #3a3a3a
+		font-family: $dl
+	.reg-slct
+		display: inline-block
+		width: 250px / 500px * 100%
+		border: 1px solid #b5b3b4
+		line-height: 32px
+		height: 36px
+		border-radius: 3px
+		color: #b5b3b4
+		position: relative
+		text-indent: 15px
+		&:before
+			content: ''
+			position: absolute
+			top: 14px
+			right: 8px
+			background-image: url(../img/sprite.png)
+			background-repeat: no-repeat
+			background-position: 0 -187px
+			width: 12px
+			height: 8px
+		a
+			color: #b5b3b4
+			text-decoration: none
+			font-size: 13px
+		.reg-drop
+			font-size: 13px
+			width: 100%
+			li
+				color: #b5b3b4
+				padding-left: 0
+				padding-right: 0
+.checked-f
+	position: relative
+	.fa-check
+		color: #86ad14
+		position: absolute
+		top: 8px
+		right: -33px
+		font-size: 17px
+.err-checked-f
+	position: relative
+	border: 1px solid #c7272f!important
+	box-shadow: 0px 0px 3px 0.5px rgba(199,39,47,1)!important
+	.fa-times
+		color: #c00b14
+		font-size: 18px
+		position: absolute
+		top: 8px
+		right: -33px
+.reg-title
+	display: block
+	margin: 16px 0 22px 0
+	font-size: 14px
+	color: #3a3a3a
+	font-family: $db
+
+.reg-input-t
+	font-size: 13px
+	width: 250px / 500px * 100%
+	border: 1px solid #b5b3b4
+	line-height: 32px
+	height: 36px
+	border-radius: 3px
+	color: #b5b3b4
+	position: relative
+	text-indent: 15px
+.reg-area-t
+	font-size: 13px
+	width: 250px / 500px * 100%
+	border: 1px solid #b5b3b4
+	border-radius: 3px
+	min-height: 131px
+	color: #b5b3b4
+	position: relative
+	text-indent: 15px
+	resize: vertical
+.fg-fls
+	justify-content: flex-start
+	flex-wrap: nowrap
+	flex-direction: row!important
+	label
+		display: inline-block
+.als
+	align-self: flex-start
+	margin-top: 6px
+
+.add-site-i
+	width: 32px
+	height: 32px
+	background-image: url(../img/sprite.png)
+	background-repeat: no-repeat
+	background-position: 0 -202px
+	cursor: pointer
+	display: inline-block
+	margin-left: 23px
+
+.act-ad-org
+	display: inline-block
+	position: relative
+	width: 500px / 1140px * 100%
+	vertical-align: top
+	margin-right: 8px
+
+.reg-btn-block
+	position: relative
+	width: 100%
+	margin-top: 13px
+
+.save-reg
+	width: 280px
+	background-color: #3a3a3a
+	border: none
+	font-size: 14px
+	color: #fff
+	height: 42px
+	border-radius: 3px
+	text-align: left
+	text-indent: 26px
+	display: inline-block
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		right: 25px
+		top: 14px
+		background-image: url(../img/sprite.png)
+		background-repeat: no-repeat
+		background-position: -11px -144px
+		width: 8px
+		height: 15px
 
 
 
@@ -835,5 +1043,9 @@ a.us-btn
 		color: #d7d7d7
 		font-size: 13px
 		font-family: $dl
+.mgbnull
+	margin-bottom: 0
+
+
 .mgb
 	margin-bottom: 18px
