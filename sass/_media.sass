@@ -29,6 +29,9 @@
 			text-indent: 0px
 	a.us-btn
 		padding: 0 32px
+	.form-group
+		label
+			max-width: 204px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -246,14 +249,36 @@
 		label
 			display: block
 		.reg-slct,
-		.reg-input-t,
-		.reg-area-t
+		.form-input,
+		.reg-area-t,
+		.file-upload
 			width: 100%
 	.r-plnt
 		font-size: 18px
 		margin-left: 0
 		&:before
 			display: none
+	.table-sm-check
+		tr
+			td
+				display: block
+				width: 100%
+				.form-sm-check
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					flex-direction: row
+					flex-wrap: nowrap
+					align-items: center
+					justify-content: space-between
+	.trtar
+		text-align: left
+		td
+			&:first-child
+				text-align: left
+
 
 
 

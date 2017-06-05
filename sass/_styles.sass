@@ -802,6 +802,8 @@ a.us-btn
 		font-size: 13px
 		color: #3a3a3a
 		font-family: $dl
+		line-height: 16px
+		max-width: 248px
 	.reg-slct
 		display: inline-block
 		width: 250px / 500px * 100%
@@ -845,29 +847,34 @@ a.us-btn
 	position: relative
 	border: 1px solid #c7272f!important
 	box-shadow: 0px 0px 3px 0.5px rgba(199,39,47,1)!important
+	border-radius: 3px
 	.fa-times
 		color: #c00b14
 		font-size: 18px
 		position: absolute
 		top: 8px
 		right: -33px
+	input
+		border: none
 .reg-title
 	display: block
 	margin: 16px 0 22px 0
 	font-size: 14px
 	color: #3a3a3a
 	font-family: $db
-
+.form-input
+	position: relative
+	width: 250px / 500px * 100%
 .reg-input-t
 	font-size: 13px
-	width: 250px / 500px * 100%
+	width: 100%
 	border: 1px solid #b5b3b4
 	line-height: 32px
 	height: 36px
-	border-radius: 3px
 	color: #b5b3b4
 	position: relative
 	text-indent: 15px
+	border-radius: 3px
 .reg-area-t
 	font-size: 13px
 	width: 250px / 500px * 100%
@@ -932,6 +939,137 @@ a.us-btn
 		background-position: -11px -144px
 		width: 8px
 		height: 15px
+
+input[type="checkbox"] + span, input[type="radio"] + span
+	-webkit-appearance: none
+	width: 16px
+	height: 16px
+	border: 1px solid #cccccc
+	border-radius: 1px
+	outline: none
+	box-sizing: border-box
+	display: inline-block
+	background-image: linear-gradient(to bottom, #EEEEEE 0%, #DDDCDD 100%)
+input[type="checkbox"]:checked + span:before
+	content: ""
+	display: block
+	width: 16px
+	height: 16px
+	background-image: url(../img/sprite.png)
+	background-repeat: no-repeat
+	background-position: 1px -237px
+
+.form-tags
+	position: relative
+	.tags-ul
+		position: absolute
+		top: 3px
+		left: 15px
+		li
+			display: inline-block
+			font-size: 13px
+			background-color: #fef2e0
+			color: #3a3a3a
+			padding: 3px 4px
+			border-radius: 3px
+			.fa-times
+				color: #f89201
+				font-size: 10px
+				position: relative
+				top: -1px
+				cursor: pointer
+
+.file-upload
+	position: relative
+	overflow: hidden
+	width: 250px / 500px * 100%
+	border: 1px solid #b5b3b4
+	height: 36px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	// right: -20px
+	border-radius: 3px
+	button
+		width: 98px
+		height: 100%
+		cursor: pointer
+		font-size: 13px
+		border: none
+		color: #fff
+		background-color: #3a3a3a
+		border-radius: 3px
+		height: 32px
+		position: absolute
+		right: 0
+		top: 1px
+	div
+		font-size: 14px
+		color: #b5b3b4
+		text-indent: 15px
+		white-space: nowrap
+	input[type="file"]
+		position: absolute
+		left: 0
+		top: 0
+		cursor: pointer
+		visibility: hidden
+
+.form-sm-check
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+	margin-top: 0
+	.form-input
+		display: inline-block
+		width: 16px
+		margin-left: 9px
+		margin-top: 4px
+.trade-opp
+	width: 550px / 1140px * 100%
+
+.mgllb
+	margin-left: 16px!important
+.txtin-lb
+	text-indent: 32px
+
+.table-sm-check
+	width: 100%
+	tr
+		td
+			width: 65px
+.trtar
+	text-align: right
+	td
+		&:first-child
+			text-align: left
+.trflx
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: wrap
+	td
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: flex-end
+
+
 
 
 

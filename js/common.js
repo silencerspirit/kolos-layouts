@@ -1,7 +1,7 @@
 $(function() {
 
 	//Кастомизированный Select
-	$('.slct, #reg-d').click(function(){
+	$('.slct, .reg-d').click(function(){
 		var dropBlock = $(this).parent().find('.drop');
 		
 		// Если выпадающий блок скрыт то делаем его видимым
@@ -15,7 +15,7 @@ $(function() {
 				var selectResult = $(this).html();
 				var selectVal = $(this).attr('data-value');
 
-				$(this).closest('div').find('.slct, #reg-d').removeClass('active').html(selectResult);
+				$(this).closest('div').find('.slct, .reg-d').removeClass('active').html(selectResult);
 				$(this).closest('div').find('input').val(selectVal);
 				dropBlock.slideUp();
 			});
@@ -63,9 +63,49 @@ $(function() {
 	}).eq(0).addClass("active-tab");
 
 	var checkIcon = "<i class='fa fa-check' aria-hidden='true'></i>";
-	$('#reg-d.checked-f').append(checkIcon);
 	var errCheckedIcon = "<i class='fa fa-times' aria-hidden='true'></i>"
-	$('#reg-d.err-checked-f').append(errCheckedIcon);
+		$('.checked-f').append(checkIcon);
+		$('.err-checked-f').append(errCheckedIcon);
 
+	// input[type="file"]
+	var wrapper = $( ".file-upload" ),
+		inp = wrapper.find( "input" ),
+		btn = wrapper.find( "button" ),
+		lbl = wrapper.find( "div" );
+	btn.focus(function(){
+		inp.focus()
+	});
+	// Crutches for the :focus style:
+	inp.focus(function(){
+		wrapper.addClass( "focus" );
+	}).blur(function(){
+		wrapper.removeClass( "focus" );
+	});
+
+	$('.file-upload button').add(lbl).click(function() {
+		$(this).parent().find("input").click();
+	})
+
+	var file_api = ( window.File && window.FileReader && window.FileList && window.Blob ) ? true : false;
+
+	inp.change(function(){
+		var file_name;
+		if( file_api && inp[ 0 ].files[ 0 ] )
+			file_name = inp[ 0 ].files[ 0 ].name;
+		else
+			file_name = inp.val().replace( "C:\\fakepath\\", '' );
+
+		if( ! file_name.length )
+			return;
+
+		if( lbl.is( ":visible" ) ){
+			lbl.text( file_name );
+			btn.text( "Обзор" );
+		}
+	}).change();
+
+	$( window ).resize(function(){
+	$( ".file_upload input" ).triggerHandler( "change" );
+});
 });
 
