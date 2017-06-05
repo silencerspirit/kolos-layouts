@@ -196,10 +196,14 @@
 	.t-rus
 		font-size: 22px
 	.tabs-h
+		flex-direction: column
 		.tab.active-tab
 			display: block
-		.tab
-			display: none
+		li
+			flex-basis: 0
+			p
+				span
+					display: inline-block
 	.r-plnt
 		font-size: 22px
 		white-space: nowrap
@@ -278,6 +282,8 @@
 		td
 			&:first-child
 				text-align: left
+	.txtin-lb
+		text-indent: 0
 
 
 
