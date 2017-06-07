@@ -286,11 +286,12 @@ body
 			content: ''
 			position: absolute
 			top: 12px
-			right: 0
+			right: -5px
 			width: 12px
 			height: 5px
 			background-image: url(../img/sprite.png)
-			background-position: 0 11px
+			background-position: 0 -189px
+			background-repeat: no-repeat
 
 .header-input
 	border: 2px solid #3a3a3a
@@ -1076,7 +1077,313 @@ input[type="checkbox"]:checked + span:before
 	top: -3px
 .tabs-hfs
 	justify-content: flex-start
+// Личный кабинет
+.lc-wr
+	position: relative
+	width: 100%
+	margin: 16px 0 0 0
 
+.lk-nav
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	> li
+		flex-basis: 193px
+		margin-left: 2px
+		position: relative
+		&:first-child
+			margin-left: 0
+		> a
+			padding-top: 7px
+			text-align: center
+			display: block
+			background-color: #3a3a3a
+			height: 50px
+			color: #f2f2f2
+			text-decoration: none
+		>.msg-alert
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0px
+			color: #f2f2f2
+			font-size: 13px
+			display: block
+			background-color: #727071
+			height: 15px
+			line-height: 15px
+			text-align: center
+			font-family: $dl
+		&:hover
+			>a
+				background-color: #f99300
+			>.msg-alert
+				background-color: #fa6800
+			.lk-sub
+				opacity: 1
+				visibility: visible
+.lk-sub
+	position: absolute
+	visibility: hidden
+	opacity: 0
+	transition: opacity 0.25s ease
+	z-index: 1
+	li
+		width: 193px
+		position: relative
+		margin: 2px 0 0 0
+		a
+			padding-top: 7px
+			width: 100%
+			text-align: center
+			display: block
+			background-color: #3a3a3a
+			height: 50px
+			color: #f2f2f2
+			text-decoration: none
+		.msg-alert
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0px
+			color: #f2f2f2
+			font-size: 13px
+			display: block
+			background-color: #727071
+			height: 15px
+			line-height: 15px
+			text-align: center
+			font-family: $dl
+		&:hover
+			a
+				background-color: #f99300
+			.msg-alert
+				background-color: #fa6800
+
+li.lk-active
+	a
+		background-color: #727071
+
+.lk-orders-s
+	position: relative
+	width: 100%
+	margin-top: 23px
+
+.lk-orders-title
+	font-size: 26px
+	color: #3a3a3a
+	font-family: $dl
+	position: relative
+	margin-bottom: 55px
+	&:before
+		content: ''
+		display: inline-block
+		width: 45px
+		height: 45px
+		background-image: url(../img/icon-sprite.png)
+		background-repeat: no-repeat
+		background-position: 0 -633px
+		position: relative
+		top: 15px
+		left: 4px
+		margin-right: 24px
+
+.lk-order-flex-w
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: wrap
+
+.lk-orders-received,
+.lk-orders-pending
+	position: relative
+	width: 555px / 1140px * 100%
+
+.orders-received-t
+	font-size: 20px
+	color: #3a3a3a
+	font-family: $dl
+	display: inline-block
+	margin-right: 10px
+
+.orders-alert
+	font-family: $db
+	font-size: 13px
+	color: #fa6800
+	display: inline-block
+
+.received-table,
+.pending-table
+	position: relative
+	margin-top: 20px
+	margin-left: 15px
+	tr
+		border-bottom: 1px solid #ebebeb
+		&:first-child
+			border-bottom: 2px solid #ebebeb
+		th
+			font-size: 13px
+			color: #727071
+			font-family: $db
+			line-height: 16px
+			vertical-align: middle
+			padding: 3px 0
+		td
+			font-size: 13px
+			font-family: $dl
+			color: #3a3a3a
+			line-height: 20px
+			vertical-align: middle
+			padding: 5px 0
+
+
+.order-num
+	min-width: 32px
+	text-align: left
+	vertical-align: middle
+.order-kind
+	width: 130px
+	text-align: left
+	vertical-align: middle
+.order-date
+	width: 90px
+	text-align: left
+	vertical-align: middle
+.order-count
+	width: 70px
+	text-align: left
+	vertical-align: middle
+
+.order-weight
+	width: 70px
+	text-align: left
+	vertical-align: middle
+.order-price
+	width: 80px
+	text-align: left
+	vertical-align: middle
+.order-action
+	width: 60px
+	vertical-align: middle
+
+.order-save
+	width: 25px
+	height: 25px
+	position: relative
+	display: inline-block
+	background-image: url(../img/sprite.png)
+	background-repeat: no-repeat
+	background-position: 0 -259px
+	vertical-align: middle
+	cursor: pointer
+.order-check
+	width: 25px
+	height: 25px
+	position: relative
+	display: inline-block
+	background-image: url(../img/sprite.png)
+	background-repeat: no-repeat
+	background-position: 0 -296px
+	vertical-align: middle
+	cursor: pointer
+.pending-table
+	.order-kind
+		width: 210px
+.order-d
+	width: 25px
+	height: 25px
+	position: relative
+	display: inline-block
+	background-image: url(../img/sprite.png)
+	background-repeat: no-repeat
+	background-position: 0 -344px
+	vertical-align: middle
+	cursor: pointer
+.order-del
+	width: 25px
+	height: 25px
+	position: relative
+	display: inline-block
+	background-image: url(../img/sprite.png)
+	background-repeat: no-repeat
+	background-position: 0 -375px
+	vertical-align: middle
+	cursor: pointer
+
+.lk-orders-pagination
+	margin-top: 32px
+	text-align: center
+	ul
+		display: inline-block
+		list-style-type: none
+		position: relative
+		li
+			display: inline-block
+			margin: 0 5px
+			a
+				display: block
+				font-size: 10px
+				color: #3a3a3a
+				text-decoration: none
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					top: -10px
+					left: -2px
+					width: 10px
+					height: 10px
+					border-radius: 50%
+					background-color: #727071
+		.last-p
+			position: absolute
+			top: -10px
+			right: -28px
+			a
+				&:before
+					display: none
+				&:after
+					content: ''
+					position: absolute
+					bottom: 0
+					left: 6px
+					width: 5px
+					border-bottom: 1px dotted #939292
+		.p-active
+			a
+				&:before
+					background-color: #f99300
+
+.lk-orders-p-next
+	position: absolute
+	top: -10px
+	right: -40px
+	span
+		display: inline-block
+		width: 10px
+		height: 10px
+		background-image: url(../img/sprite.png)
+		background-repeat: no-repeat
+		background-position: 0 -324px
+.lk-orders-p-prev
+	position: absolute
+	top: -10px
+	left: -20px
+	span
+		display: inline-block
+		width: 10px
+		height: 10px
+		background-image: url(../img/sprite.png)
+		background-repeat: no-repeat
+		background-position: -22px -324px
 
 
 

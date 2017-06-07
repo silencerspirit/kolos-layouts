@@ -32,6 +32,9 @@
 	.form-group
 		label
 			max-width: 204px
+	.lk-orders-received,
+	.lk-orders-pending
+		width: 550px / 940px * 100%
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -51,6 +54,9 @@
 	.leg-ad-org,
 	.act-ad-org
 		width: 100%
+	.lk-orders-received,
+	.lk-orders-pending
+		width: 550px / 720px * 100%
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -207,9 +213,43 @@
 	.r-plnt
 		font-size: 22px
 		white-space: nowrap
-
+	.lk-orders-received,
+	.lk-orders-pending
+		width: 100%
+	.received-table,
+	.pending-table
+		width: 100%
+		.order-kind
+			width: auto
+	.lk-nav
+		flex-direction: column
+		li
+			flex-basis: 0px
+			margin: 5px 0
+			.lk-sub
+				width: 100%
+				li
+					width: 100%
 @media only screen and (max-width : 640px)
-	//
+	.received-table,
+	.pending-table
+		margin-left: 0
+		th
+			display: none
+		td
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			width: 100
+			&:last-child
+				justify-content: center
+			&:before
+				content: attr(data-label)
+				font-family: $db
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	.logo-block
