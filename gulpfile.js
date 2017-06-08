@@ -23,6 +23,17 @@ gulp.task('scripts', function() {
 		'libs/popup/dist/jquery.magnific-popup.min.js',
 		'libs/input-mask/jquery.inputmask.js',
 		'libs/tabs-ui/jquery-ui.min.js',
+		'libs/mediakit/js/bootstrap.min.js',
+		'libs/mediakit/js/material.min.js',
+		'libs/mediakit/js/moment.min.js',
+		'libs/mediakit/js/nouislider.min.js',
+		'libs/mediakit/js/bootstrap-datetimepicker.js',
+		'libs/mediakit/js/bootstrap-selectpicker.js',
+		'libs/mediakit/js/bootstrap-tagsinput.js',
+		'libs/mediakit/js/jasny-bootstrap.min.js',
+		'libs/mediakit/js/atv-img-animation.js',
+		'libs/mediakit/js/jquery.flexisel.js',
+		'libs/mediakit/js/material-kit.min.js',
 		'js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
