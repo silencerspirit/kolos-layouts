@@ -57,6 +57,15 @@
 	.lk-orders-received,
 	.lk-orders-pending
 		width: 550px / 720px * 100%
+	.flex-msg-w
+		flex-wrap: wrap
+		.messages-inputs,
+		.messages-inbox
+			width: 100%
+			margin-left: 0
+		.messages-ui,
+		.inbox-msg-table
+			margin-left: 0
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -230,13 +239,6 @@
 				width: 100%
 				li
 					width: 100%
-	.flex-msg-w
-		flex-wrap: wrap
-		.messages-inputs
-			width: 100%
-			margin-left: 0
-		.messages-ui
-			margin-left: 0
 @media only screen and (max-width : 640px)
 	.received-table,
 	.pending-table
@@ -257,6 +259,13 @@
 			&:before
 				content: attr(data-label)
 				font-family: $db
+	.messages-inbox
+		min-width: 610px
+		overflow: scroll
+	.inbox-msg-table
+		width: 1100px
+		
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	.logo-block

@@ -107,5 +107,14 @@ $(function() {
 	$( window ).resize(function(){
 	$( ".file_upload input" ).triggerHandler( "change" );
 });
+
+	$('.inbox-msg-table tr td .checkbox input[type=checkbox]').on('change', function() {
+
+		if ( $(this).is(':checked') ) {
+				$(this).closest('tr').addClass('table-tr-active')
+		} else {
+			$(this).closest('tr').removeClass('table-tr-active')
+		}
+	})
 });
 
