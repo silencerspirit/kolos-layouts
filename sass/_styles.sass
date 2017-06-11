@@ -1689,15 +1689,397 @@ textarea.msg-texta
 .table-tr-active
 	background: rgba(255, 120, 87, 0.5)
 
+.catalog-owner
+	position: relative
+	width: 100%
+	margin-top: 20px
+	.owner-t
+		font-size: 36px
+		font-family: $dl
+		color: #3c4858
+		margin-top: 24px
+		&:before
+			content: ''
+			position: relative
+			top: 10px
+			left: 8px
+			display: inline-block
+			width: 36px
+			height: 36px
+			background-image: url(../img/icon-sprite.png)
+			background-position: 0 -696px
+			background-repeat: no-repeat
+			margin-right: 40px
+
+.catalog-o-b
+	height: 1px
+	width: 100%
+	margin-top: 25px
+	background-color: #e5e5e5
+	margin-bottom: 25px
+
+.left-side-cat
+	position: relative
+	width: 100%
+
+.add-new-cgry
+	font-size: 13px
+	text-transform: uppercase
+	color: #f97500
+	display: inline-block
+	margin-top: 18px
+	margin-left: 10px
+	cursor: pointer
+	&:before
+		content: ''
+		display: inline-block
+		position: relative
+		top: 3px
+		margin-right: 10px
+		width: 15px
+		height: 15px
+		background-image: url(../img/icon-sprite.png)
+		background-repeat: no-repeat
+		background-position: -63px -710px
+
+.find-product
+	width: 100%
+	position: relative
+	margin-top: 36px
+	padding-left: 32px
+	.find-product-t
+		display: inline-block
+		font-size: 14px
+		font-family: $db
+		color: #3a3a3a
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 8px
+			left: -18px
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 5px 4px 0 4px
+			border-color: #3c4858 transparent transparent transparent
+	.form-group
+		margin: 14px 0 0 0
+	.btn-group
+		margin: 0
+
+.btn-transparent
+	background-color: transparent!important
+	color: #acacac!important
+	text-transform: none
+	font-size: 14px
+	padding-left: 2px
+	height: 45px
+	padding-bottom: 6px
+	border-bottom: 1px solid #d2d2d2
+	box-shadow: none
+	&:hover
+		background-color: transparent!important
+		color: #acacac!important
+
+.find-product
+	.control-label
+		font-size: 14px
+		font-family: $df
+		color: #acacac
+	.btn-group.open .dropdown-toggle
+		box-shadow: none
+
+.filter-product
+	margin-top: 34px
+	margin-left: 32px
+	&-t
+		display: inline-block
+		font-size: 14px
+		font-family: $db
+		color: #3a3a3a
+		position: relative
+		cursor: pointer
+		&:before
+			content: ''
+			position: absolute
+			top: 8px
+			left: -18px
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 5px 4px 0 4px
+			border-color: #3c4858 transparent transparent transparent
+
+.filter-texture
+	position: relative
+	width: 100%
+	margin-top: 5px
+	padding-bottom: 10px
+	border-bottom: 1px solid #e5e5e5
+	label
+		font-size: 14px
+		display: block
+		color: #727071
+	.bootstrap-tagsinput
+		padding-left: 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		.tag
+			border-radius: 3px
+			background-color: #f99300
+			margin: 5px 10px 5px 0
+			position: relative
+		input
+			order: 2
+			margin-left: 5px
+			font-size: 14px
+			color: #727071
+.add-texture-f
+	position: relative
+	top: 10px
+	left: 0px
+	display: inline-block
+	width: 15px
+	height: 15px
+	background-image: url(../img/icon-sprite.png)
+	background-repeat: no-repeat
+	background-position: -63px -710px
+	order: 1
+	cursor: pointer
 
 
+.filter-color
+	position: relative
+	width: 100%
+	margin-top: 14px
+	border-bottom: 1px solid #e5e5e5
+	padding-bottom: 26px
+	label
+		font-size: 14px
+		display: block
+		color: #727071
+	.checkbox input[type=checkbox]:checked+.checkbox-material .check
+		border-color: #f99300
+	.checkbox
+		font-size: 14px!important
+		font-family: $dl!important
+		margin: 4px 0 0 0
+		.c-name
+			font-size: 14px
+			display: inline-block
+			margin-left: 8px
+			position: relative
+			top: 2px
+			.c-count
+				color: #b5b3b4
+				display: inline-block
+				margin-left: 7px
+	.color-slider-w
+		position: absolute
+		top: 15px
+		right: 0
+		width: 67px
+		height: 100%
+		.color-slider
+			position: relative
+			div
+				margin: 4px 0 4px 0
+		.prev,
+		.next
+			display: inline-block
+			z-index: 9
+			position: absolute
+			cursor: pointer
+			width: 15px
+			height: 15px
+		.prev
+			background-image: url(../img/sprite.png)
+			background-repeat: no-repeat
+			background-position: 0 -180px
+			left: 50%
+			margin-left: -15px
+		.next
+			top: -8px
+			left: 50%
+			margin-left: -15px
+			background-image: url(../img/sprite.png)
+			background-repeat: no-repeat
+			background-position: -14px -180px
 
+.manuf
+	position: relative
+	width: 100%
+	.btn-transparent
+		color: #727071!important
+	.manuf-t
+		font-family: $dl
+		font-size: 14px
+		color: #727071
+		display: block
+		margin-bottom: 7px
+	.mnf-f
+		display: inline-block
+		width: 60px
+		margin: 0 8px
+		label
+			display: inline-block
+	span
+		font-size: 14px
+		color: #727071
 
+.manuf-f-to
+	position: relative
+	width: 100%
+	vertical-align: top
+	span
+		vertical-align: top
+.show-block
+	text-align: right
 
+.btn-show
+	width: 165px
+	margin-top: 20px
+	display: inline-block
 
+.flex-h-c
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	.cat-t
+		display: inline-block
+		font-size: 26px
+		font-family: $dl
+		margin-top: 3px
+		margin-left: 20px
+	.add-new-product
+		font-size: 13px
+		text-transform: uppercase
+		color: #f97500
+		display: inline-block
+		margin-top: 20px
+		margin-right: 2px
+		cursor: pointer
+		&:before
+			content: ''
+			display: inline-block
+			position: relative
+			top: 3px
+			margin-right: 10px
+			width: 15px
+			height: 15px
+			background-image: url(../img/icon-sprite.png)
+			background-repeat: no-repeat
+			background-position: -63px -710px
 
+.cards-wrapper-fl
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
 
+.card-l
+	padding: 10px 10px
+	flex-basis: 197px
+	text-overflow: ellipsis
+	overflow: hidden
+	box-shadow: 0px 1px 0px 0px rgba(195,195,195,1)
+	transition: box-shadow 0.25s ease 0.5s
+	line-height: 20px
+	position: relative
+	margin-top: 18px
+	.card-img
+		text-align: center
+		img
+			display: inline-block
+	a
+		font-size: 14px
+		line-height: 14px
+		color: #333
+		font-family: $dl
+	&-name
+		white-space: nowrap
+		font-size: 12px
+		color: #999
+		width: 100%
+		margin-top: 5px
+		display: inline-block
+		text-overflow: ellipsis
+		overflow: hidden
+	&-price
+		font-size: 18px
+		font-family: $dl
+		color: #3c4858
+		display: inline-block
+		margin-top: 8px
+	.btn-edit
+		font-size: 12px
+		margin: 14px 0 0 0
+		width: 174px
+		.material-icons
+			margin-left: -12px
+			margin-right: 8px
+	.delete-card-l
+		width: 100%
+		background-color: #e60000
+		color: #fff
+		text-transform: uppercase
+		font-size: 13px
+		height: 30px
+		line-height: 30px
+		display: inline-block
+		text-align: center
+		position: absolute
+		top: 20px
+		left: 0
+		cursor: pointer
+		box-shadow: 0px 6px 10px -3px rgba(0,0,0,0.51)
+		z-index: 10
+		opacity: 0
+		visibility: hidden
+		transition: all 0.25s ease 0.5s
+		&:before
+			content: ''
+			display: inline-block
+			width: 15px
+			height: 15px
+			background-image: url(../img/sprite.png)
+			background-repeat: no-repeat
+			background-position: 0 -409px
+			position: relative
+			left: -7px
+			top: 3px
+	&:hover
+		box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.6)
+		a
+			color: #f99300
+			text-decoration: underline
+		.delete-card-l
+			opacity: 1
+			visibility: visible
 
+.cards-p
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	margin-top: 32px
 
 
 

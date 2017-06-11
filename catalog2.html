@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Каталог Товаров</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header-flex-w">
+				<div class="logo-block">
+					<h1 class="logo">b2b.<span>cash</span></h1>
+					<span class="logo-d">Международная торговая площадка</span>
+				</div>
+
+				<div class="lang-block">
+					<a href="#" class="l-china t-sty">中國</a>
+					<a href="#" class="l-eng t-sty">English</a>
+					<a href="#" class="about t-sty">О площадке</a>
+				</div>
+
+				<div class="os-block">
+					<i class="fa fa-apple" aria-hidden="true"></i>
+					<i class="fa fa-android" aria-hidden="true"></i>
+				</div>
+
+				<ul class="acc-block">
+					<li class="log-in"><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Вход</a></li>
+					<li class="reg"><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Регистрация</a></li>
+					<li class="help"><a href="#"><i class="fa fa-question" aria-hidden="true"></i>Помощь</a></li>
+				</ul>
+			</div>
+
+			<div class="header-form-block">
+				<form action="#" class="header-form">
+					<div class="header-form-slct">
+						<a href="#" class="slct h-slct">Товар</a>
+						<ul class="drop h-drop">
+							<li data-value="1">Товар</li>
+							<li data-value="2">Таможня + логистика</li>
+							<li data-value="3">Логистика</li>
+						</ul>
+						<input type="hidden" name="search_type"  value="">
+					</div>
+
+					<input type="text" class="header-input" placeholder="Я ищу...">
+					<button type="submit" class="header-find-btn"><i class="fa fa-search" aria-hidden="true"></i>Найти</button>
+				</form>
+			</div>
+		</div>
+
+	</header>
+
+	<section class="catalog-owner">
+		<div class="container">
+			<h2 class="owner-t">Каталог</h2>
+			<div class="catalog-o-b"></div>
+
+			<div class="row">
+				<div class="col-md-4 col-lg-3">
+					<div class="left-side-cat">
+
+						<div class="find-product">
+							<span class="find-product-t">Найти товар</span>
+							<div class="form-group label-floating">
+								<label class="control-label">Категория</label>
+								<input type="email" class="form-control">
+							</div>
+
+							<div class="form-group label-floating">
+								<label class="control-label">Товар</label>
+								<input type="email" class="form-control">
+							</div>
+
+							<select class="selectpicker" data-style="btn btn-transparent" title="Single Select" data-size="7">
+								<option disabled selected>Сортировка</option>
+								<option value="1">Сортировка 1</option>
+								<option value="2">Сортировка 2</option>
+							</select>
+						</div>
+
+						<div class="filter-product">
+							<span class="filter-product-t">Фильтр</span>
+
+							<div class="filter-tog-b">
+								<div class="filter-texture">
+									<label>Фактура</label>
+									<span class="add-tag"></span>
+									<input name="tagsinput" class="tagsinput tag-rose" value="30333, 31021" />
+								</div>
+
+								<div class="filter-color">
+									<label>Цвет</label>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="optionsCheckboxes" checked>
+											<span class="c-name">Ольха <span class="c-count">(23)</span></span>
+										</label>
+									</div>
+
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="optionsCheckboxes">
+											<span class="c-name">Дуб седан<span class="c-count">(23)</span></span>
+										</label>
+									</div>
+
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="optionsCheckboxes">
+											<span class="c-name">Бук<span class="c-count">(23)</span></span>
+										</label>
+									</div>
+
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="optionsCheckboxes">
+											<span class="c-name">Белый дуб<span class="c-count">(23)</span></span>
+										</label>
+									</div>
+									<div class="color-slider-w">
+										<div class="color-slider">
+											<div><img src="img/c1.jpg" alt="Цвет"></div>
+											<div><img src="img/c2.jpg" alt="Цвет"></div>
+											<div><img src="img/c3.jpg" alt="Цвет"></div>
+											<div><img src="img/c4.jpg" alt="Цвет"></div>
+											<div><img src="img/c1.jpg" alt="Цвет"></div>
+											<div><img src="img/c2.jpg" alt="Цвет"></div>
+											<div><img src="img/c3.jpg" alt="Цвет"></div>
+											<div><img src="img/c4.jpg" alt="Цвет"></div>
+										</div>
+										<span class="prev"></span>
+										<span class="next"></span>
+									</div>
+								</div>
+
+								<div class="manuf">
+									<select class="selectpicker" data-style="btn btn-transparent" title="Single Select" data-size="7">
+										<option disabled selected>Производитель</option>
+										<option value="1">Производитель 1</option>
+										<option value="2">Производитель 2</option>
+									</select>
+
+									<div class="manuf-f-to">
+										<span class="manuf-t">Ширина полотна</span>
+										<span>от</span>
+										<div class="form-group mnf-f">
+											<input type="text" value="100" class="form-control" />
+										</div>
+										<span>до</span>
+										<div class="form-group mnf-f">
+											<input type="text" value="100 300" class="form-control" />
+										</div>
+										<span>см</span>
+									</div>
+
+									<div class="manuf-f-to">
+										<span class="manuf-t">Толщина</span>
+										<span>от</span>
+										<div class="form-group mnf-f">
+											<input type="text" value="100" class="form-control" />
+										</div>
+										<span>до</span>
+										<div class="form-group mnf-f">
+											<input type="text" value="100 300" class="form-control" />
+										</div>
+										<span>см</span>
+									</div>
+
+									<div class="manuf-f-to">
+										<span class="manuf-t">Цена</span>
+										<span>от</span>
+										<div class="form-group mnf-f">
+											<input type="text" value="100" class="form-control" />
+										</div>
+										<span>до</span>
+										<div class="form-group mnf-f">
+											<input type="text" value="100 300" class="form-control" />
+										</div>
+										<span>см</span>
+									</div>
+
+									<div id="sliderDouble" class="slider slider-info"></div>
+
+
+									<div class="show-block">
+										<button class="btn btn-primary btn-show">Показать</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8 col-lg-9">
+					<div class="flex-h-c">
+						<h3 class="cat-t">Ламинат</h3>
+					</div>
+
+					<div class="cards-wrapper-fl">
+						<div class="card-l">
+							<div class="card-img">
+								<img src="img/img1.jpg" alt="img" class="img-responsive">
+							</div>
+							<a href="#">Ламинат Krono Original Castello Classic Дуб коттедж</a>
+							<span class="card-l-name">ООО НПО "Стройка перестройка блаблабла"</span>
+							<span class="card-l-price">135 000 руб</span>
+							<button class="btn btn-primary btn-edit"><i class="material-icons">shopping_cart</i>В корзину</button>
+							
+						</div>
+
+						<div class="card-l">
+							<div class="card-img">
+								<img src="img/img1.jpg" alt="img" class="img-responsive">
+							</div>
+							<a href="#">Ламинат Krono Original Castello Classic Дуб коттедж</a>
+							<span class="card-l-name">ООО НПО "Стройка перестройка блаблабла"</span>
+							<span class="card-l-price">135 000 руб</span>
+							<button class="btn btn-primary btn-edit"><i class="material-icons">shopping_cart</i>В корзину</button>
+							
+						</div>
+
+						<div class="card-l">
+							<div class="card-img">
+								<img src="img/img1.jpg" alt="img" class="img-responsive">
+							</div>
+							<a href="#">Ламинат Krono Original Castello Classic Дуб коттедж</a>
+							<span class="card-l-name">ООО НПО "Стройка перестройка блаблабла"</span>
+							<span class="card-l-price">135 000 руб</span>
+							<button class="btn btn-primary btn-edit"><i class="material-icons">shopping_cart</i>В корзину</button>
+							
+						</div>
+
+						<div class="card-l">
+							<div class="card-img">
+								<img src="img/img1.jpg" alt="img" class="img-responsive">
+							</div>
+							<a href="#">Ламинат Krono Original Castello Classic Дуб коттедж</a>
+							<span class="card-l-name">ООО НПО "Стройка перестройка блаблабла"</span>
+							<span class="card-l-price">135 000 руб</span>
+							<button class="btn btn-primary btn-edit"><i class="material-icons">shopping_cart</i>В корзину</button>
+							
+						</div>
+
+						<div class="card-l">
+							<div class="card-img">
+								<img src="img/img1.jpg" alt="img" class="img-responsive">
+							</div>
+							<a href="#">Ламинат Krono Original Castello Classic Дуб коттедж</a>
+							<span class="card-l-name">ООО НПО "Стройка перестройка блаблабла"</span>
+							<span class="card-l-price">135 000 руб</span>
+							<button class="btn btn-primary btn-edit"><i class="material-icons">shopping_cart</i>В корзину</button>
+							
+						</div>
+
+						<div class="card-l">
+							<div class="card-img">
+								<img src="img/img1.jpg" alt="img" class="img-responsive">
+							</div>
+							<a href="#">Ламинат Krono Original Castello Classic Дуб коттедж</a>
+							<span class="card-l-name">ООО НПО "Стройка перестройка блаблабла"</span>
+							<span class="card-l-price">135 000 руб</span>
+							<button class="btn btn-primary btn-edit"><i class="material-icons">shopping_cart</i>В корзину</button>
+							
+						</div>
+
+						<div class="card-l">
+							<div class="card-img">
+								<img src="img/img1.jpg" alt="img" class="img-responsive">
+							</div>
+							<a href="#">Ламинат Krono Original Castello Classic Дуб коттедж</a>
+							<span class="card-l-name">ООО НПО "Стройка перестройка блаблабла"</span>
+							<span class="card-l-price">135 000 руб</span>
+							<button class="btn btn-primary btn-edit"><i class="material-icons">shopping_cart</i>В корзину</button>
+							
+						</div>
+
+						<div class="card-l">
+							<div class="card-img">
+								<img src="img/img1.jpg" alt="img" class="img-responsive">
+							</div>
+							<a href="#">Ламинат Krono Original Castello Classic Дуб коттедж</a>
+							<span class="card-l-name">ООО НПО "Стройка перестройка блаблабла"</span>
+							<span class="card-l-price">135 000 руб</span>
+							<button class="btn btn-primary btn-edit"><i class="material-icons">shopping_cart</i>В корзину</button>
+							
+						</div>
+
+						<div class="card-l">
+							<div class="card-img">
+								<img src="img/img1.jpg" alt="img" class="img-responsive">
+							</div>
+							<a href="#">Ламинат Krono Original Castello Classic Дуб коттедж</a>
+							<span class="card-l-name">ООО НПО "Стройка перестройка блаблабла"</span>
+							<span class="card-l-price">135 000 руб</span>
+							<button class="btn btn-primary btn-edit"><i class="material-icons">shopping_cart</i>В корзину</button>
+							
+						</div>
+
+						<div class="card-l">
+							<div class="card-img">
+								<img src="img/img1.jpg" alt="img" class="img-responsive">
+							</div>
+							<a href="#">Ламинат Krono Original Castello Classic Дуб коттедж</a>
+							<span class="card-l-name">ООО НПО "Стройка перестройка блаблабла"</span>
+							<span class="card-l-price">135 000 руб</span>
+							<button class="btn btn-primary btn-edit"><i class="material-icons">shopping_cart</i>В корзину</button>
+							
+						</div>
+
+						<div class="card-l">
+							<div class="card-img">
+								<img src="img/img1.jpg" alt="img" class="img-responsive">
+							</div>
+							<a href="#">Ламинат Krono Original Castello Classic Дуб коттедж</a>
+							<span class="card-l-name">ООО НПО "Стройка перестройка блаблабла"</span>
+							<span class="card-l-price">135 000 руб</span>
+							<button class="btn btn-primary btn-edit"><i class="material-icons">shopping_cart</i>В корзину</button>
+							
+						</div>
+
+						<div class="card-l">
+							<div class="card-img">
+								<img src="img/img1.jpg" alt="img" class="img-responsive">
+							</div>
+							<a href="#">Ламинат Krono Original Castello Classic Дуб коттедж</a>
+							<span class="card-l-name">ООО НПО "Стройка перестройка блаблабла"</span>
+							<span class="card-l-price">135 000 руб</span>
+							<button class="btn btn-primary btn-edit"><i class="material-icons">shopping_cart</i>В корзину</button>
+							
+						</div>
+					</div>
+					<ul class="pagination pagination-primary cards-p">
+						<li><a href="#"><<</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li class="active"><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">>></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="footdown"></div>
+
+	<footer class="footer">
+		<div class="footer-nav">
+			<div class="container">
+				<ul>
+					<li><a href="#">Каталог товаров</a></li>
+					<li><a href="#">Заводы-изготовители</a></li>
+					<li><a href="#">Поставщики</a></li>
+					<li><a href="#">Международная логистика</a></li>
+					<li><a href="#">Внутрироссийская логистика</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer_copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<p class="copyrigth_text"><span>©</span> 2011–2017 <a href="#">B2B.CASH</a></p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-3 col-md-2">
+						<ul class="footer_list">
+							<li>8 800 707-05-75</li>
+							<li class="mgb">Бесплатно по России</li>
+							<li>Служба техподдержки</li>
+							<li>info@stroytorgi.ru</li>
+							<li>+7 (495) 555-55-55</li>
+						</ul>
+					</div>
+
+					<div class="col-sm-push-1 col-sm-3 col-md-2">
+						<ul class="footer_list">
+							<li><a href="#">Регистрация на сайте</a></li>
+							<li><a href="#">Личный кабинет</a></li>
+							<li><a href="#">Участие в аукционах</a></li>
+							<li><a href="#">Часто задаваемые вопросы</a></li>
+							<li><a href="#">Помощь</a></li>
+							<li><a href="#">Техподдержка</a></li>
+							<li><a href="#">Документы</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

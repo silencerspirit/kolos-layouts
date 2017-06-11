@@ -34,6 +34,7 @@ gulp.task('scripts', function() {
 		'libs/mediakit/js/atv-img-animation.js',
 		'libs/mediakit/js/jquery.flexisel.js',
 		'libs/mediakit/js/material-kit.min.js',
+		'libs/slick/slick.min.js',
 		'js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

@@ -116,5 +116,32 @@ $(function() {
 			$(this).closest('tr').removeClass('table-tr-active')
 		}
 	})
+
+	var filterAddTag = '<span class="add-texture-f"></span>'
+	$('.filter-texture .bootstrap-tagsinput input').before(filterAddTag)
+
+	// slick
+		$('.color-slider').slick({
+			vertical: true,
+			slidesToShow: 4,
+			infinite: false,
+			prevArrow: $('.prev'),
+			nextArrow: $('.next')
+		});
+
+		var slider2 = document.getElementById('sliderDouble');
+
+		noUiSlider.create(slider2, {
+			start: [ 20, 60 ],
+			connect: true,
+			range: {
+				min:  0,
+				max:  100
+			}
+		});
+
+		$('.filter-product-t').click(function() {
+			$('.filter-tog-b').slideToggle();
+		})
 });
 
