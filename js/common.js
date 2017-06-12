@@ -117,9 +117,18 @@ $(function() {
 		}
 	})
 
-	var filterAddTag = '<span class="add-texture-f"></span>'
-	$('.filter-texture .bootstrap-tagsinput input').before(filterAddTag)
+	function removeInput() {
+		var filterAddTag = '<span class="add-texture-f"></span>'
+		var filterTagBlock = '<div class="filter-tag-block"></div>'
+		// $('.filter-texture .boottrap-tagsinput').find('input').remove();
+		$('.filter-texture .bootstrap-tagsinput').append(filterTagBlock)
+		$('.filter-texture .bootstrap-tagsinput input').detach().prependTo('.filter-texture .bootstrap-tagsinput .filter-tag-block')
+		$('.filter-texture .bootstrap-tagsinput .filter-tag-block').append(filterAddTag)
+		// $('.filter-texture .bootstrap-tagsinput input').before(filterAddTag)
+	}
 
+	removeInput()
+	
 	// slick
 		$('.color-slider').slick({
 			vertical: true,
