@@ -53,7 +53,7 @@ $(function() {
 	});
 
 	// input mask
-	$('#phone-mask').inputmask("+7(999)999-99-99");
+	$("#phone-mask").mask("+7(999)999-99-99");
 
 	// tabs
 	$(".tab-item").not(":first").hide();
@@ -132,11 +132,11 @@ $(function() {
 		var slider2 = document.getElementById('sliderDouble');
 
 		noUiSlider.create(slider2, {
-			start: [ 20, 60 ],
+			start: [ 0, 5000000 ],
 			connect: true,
 			range: {
 				min:  0,
-				max:  100
+				max:  9999999
 			}
 		});
 

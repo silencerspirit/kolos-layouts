@@ -21,7 +21,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'libs/jquery/dist/jquery.min.js',
 		'libs/popup/dist/jquery.magnific-popup.min.js',
-		'libs/input-mask/jquery.inputmask.js',
+		'libs/input-mask/mask.js',
 		'libs/tabs-ui/jquery-ui.min.js',
 		'libs/mediakit/js/bootstrap.min.js',
 		'libs/mediakit/js/material.min.js',

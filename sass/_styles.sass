@@ -5,6 +5,13 @@
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
 
+input[type='number']
+	-moz-appearance:textfield
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+	-webkit-appearance: none
+
 *::-webkit-input-placeholder
 	color: #b5b3b4
 	opacity: 1
@@ -1765,23 +1772,13 @@ textarea.msg-texta
 			border-color: #3c4858 transparent transparent transparent
 	.form-group
 		margin: 14px 0 0 0
-	.btn-group
+	.btn
 		margin: 0
-
-.btn-transparent
-	background-color: transparent!important
+		text-transform: none
+	.btn-group
+		margin: 5px 0 0 0
+.bootstrap-select button.form-control
 	color: #acacac!important
-	text-transform: none
-	font-size: 14px
-	padding-left: 2px
-	height: 45px
-	padding-bottom: 6px
-	border-bottom: 1px solid #d2d2d2
-	box-shadow: none
-	&:hover
-		background-color: transparent!important
-		color: #acacac!important
-
 .find-product
 	.control-label
 		font-size: 14px
@@ -1830,6 +1827,7 @@ textarea.msg-texta
 		display: flex
 		flex-direction: row
 		flex-wrap: wrap
+		align-content: center
 		.tag
 			border-radius: 3px
 			background-color: #f99300
@@ -1841,9 +1839,7 @@ textarea.msg-texta
 			font-size: 14px
 			color: #727071
 .add-texture-f
-	position: relative
-	top: 10px
-	left: 0px
+	align-self: center
 	display: inline-block
 	width: 15px
 	height: 15px
@@ -1857,7 +1853,7 @@ textarea.msg-texta
 .filter-color
 	position: relative
 	width: 100%
-	margin-top: 14px
+	margin-top: 18px
 	border-bottom: 1px solid #e5e5e5
 	padding-bottom: 26px
 	label
@@ -1869,7 +1865,7 @@ textarea.msg-texta
 	.checkbox
 		font-size: 14px!important
 		font-family: $dl!important
-		margin: 4px 0 0 0
+		margin: 0 0 0 0
 		.c-name
 			font-size: 14px
 			display: inline-block
@@ -1881,15 +1877,22 @@ textarea.msg-texta
 				display: inline-block
 				margin-left: 7px
 	.color-slider-w
-		position: absolute
-		top: 15px
-		right: 0
-		width: 67px
-		height: 100%
 		.color-slider
 			position: relative
-			div
-				margin: 4px 0 4px 0
+			.color-slider-item
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: row
+				flex-wrap: nowrap
+				justify-content: space-between
+				align-items: center
+				margin: 2px 0
+				img
+					align-self: center
+					margin: 3px 10px 0 0
 		.prev,
 		.next
 			display: inline-block
@@ -1897,16 +1900,16 @@ textarea.msg-texta
 			position: absolute
 			cursor: pointer
 			width: 15px
-			height: 15px
+			height: 12px
 		.prev
 			background-image: url(../img/sprite.png)
 			background-repeat: no-repeat
-			background-position: 0 -180px
-			left: 50%
-			margin-left: -15px
+			background-position: 2px -183px
+			right: 30px
+			bottom: 10%
 		.next
-			top: -8px
-			left: 50%
+			right: 30px
+			top: 4%
 			margin-left: -15px
 			background-image: url(../img/sprite.png)
 			background-repeat: no-repeat
@@ -1915,8 +1918,6 @@ textarea.msg-texta
 .manuf
 	position: relative
 	width: 100%
-	.btn-transparent
-		color: #727071!important
 	.manuf-t
 		font-family: $dl
 		font-size: 14px
@@ -1926,19 +1927,40 @@ textarea.msg-texta
 	.mnf-f
 		display: inline-block
 		width: 60px
-		margin: 0 8px
+		margin: 0 14px
 		label
 			display: inline-block
-	span
-		font-size: 14px
-		color: #727071
-
-.manuf-f-to
-	position: relative
-	width: 100%
-	vertical-align: top
-	span
+		input
+			font-size: 14px
+			color: #727071
+	.bootstrap-select button span
+		color: #acacac
+		text-transform: none
+	.manuf-f-to
+		position: relative
+		width: 100%
 		vertical-align: top
+		border-bottom: 1px solid #e5e5e5
+		margin-top: 4px
+		&:last-child
+			border-bottom: none
+		.manuf-t-fl
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			flex-wrap: nowrap
+			justify-content: flex-start
+			align-items: flex-start
+			> span
+				font-size: 13px
+				color: #727071
+				font-family: $dl
+				margin-top: 8px
+.bmnfbrbn
+	border: none!important
 .show-block
 	text-align: right
 
@@ -1997,7 +2019,7 @@ textarea.msg-texta
 	flex-basis: 197px
 	text-overflow: ellipsis
 	overflow: hidden
-	box-shadow: 0px 1px 0px 0px rgba(195,195,195,1)
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
 	transition: box-shadow 0.25s ease 0.5s
 	line-height: 20px
 	position: relative
@@ -2064,7 +2086,7 @@ textarea.msg-texta
 			left: -7px
 			top: 3px
 	&:hover
-		box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.6)
+		box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)
 		a
 			color: #f99300
 			text-decoration: underline

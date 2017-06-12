@@ -89,15 +89,15 @@
 							<span class="find-product-t">Найти товар</span>
 							<div class="form-group label-floating">
 								<label class="control-label">Категория</label>
-								<input type="email" class="form-control">
+								<input type="text" class="form-control">
 							</div>
 
 							<div class="form-group label-floating">
 								<label class="control-label">Товар</label>
-								<input type="email" class="form-control">
+								<input type="text" class="form-control">
 							</div>
 
-							<select class="selectpicker" data-style="btn btn-transparent" title="Single Select" data-size="7">
+							<select class="selectpicker" data-style="btn dropdown-toggle form-control" title="Single Select" data-size="7">
 								<option disabled selected>Сортировка</option>
 								<option value="1">Сортировка 1</option>
 								<option value="2">Сортировка 2</option>
@@ -110,49 +110,93 @@
 							<div class="filter-tog-b">
 								<div class="filter-texture">
 									<label>Фактура</label>
-									<span class="add-tag"></span>
 									<input name="tagsinput" class="tagsinput tag-rose" value="30333, 31021" />
 								</div>
 
 								<div class="filter-color">
 									<label>Цвет</label>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" name="optionsCheckboxes" checked>
-											<span class="c-name">Ольха <span class="c-count">(23)</span></span>
-										</label>
-									</div>
 
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" name="optionsCheckboxes">
-											<span class="c-name">Дуб седан<span class="c-count">(23)</span></span>
-										</label>
-									</div>
-
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" name="optionsCheckboxes">
-											<span class="c-name">Бук<span class="c-count">(23)</span></span>
-										</label>
-									</div>
-
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" name="optionsCheckboxes">
-											<span class="c-name">Белый дуб<span class="c-count">(23)</span></span>
-										</label>
-									</div>
 									<div class="color-slider-w">
 										<div class="color-slider">
-											<div><img src="img/c1.jpg" alt="Цвет"></div>
-											<div><img src="img/c2.jpg" alt="Цвет"></div>
-											<div><img src="img/c3.jpg" alt="Цвет"></div>
-											<div><img src="img/c4.jpg" alt="Цвет"></div>
-											<div><img src="img/c1.jpg" alt="Цвет"></div>
-											<div><img src="img/c2.jpg" alt="Цвет"></div>
-											<div><img src="img/c3.jpg" alt="Цвет"></div>
-											<div><img src="img/c4.jpg" alt="Цвет"></div>
+											<div class="color-slider-item">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" name="optionsCheckboxes" checked>
+														<span class="c-name">Ольха <span class="c-count">(23)</span></span>
+													</label>
+												</div>
+												<img src="img/c1.jpg" alt="Цвет">
+											</div>
+
+											<div class="color-slider-item">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" name="optionsCheckboxes" >
+														<span class="c-name">Дуб седан <span class="c-count">(23)</span></span>
+													</label>
+												</div>
+												<img src="img/c2.jpg" alt="Цвет">
+											</div>
+
+											<div class="color-slider-item">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" name="optionsCheckboxes" >
+														<span class="c-name">Бук <span class="c-count">(23)</span></span>
+													</label>
+												</div>
+												<img src="img/c3.jpg" alt="Цвет">
+											</div>
+
+											<div class="color-slider-item">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" name="optionsCheckboxes" >
+														<span class="c-name">Белый дуб <span class="c-count">(23)</span></span>
+													</label>
+												</div>
+												<img src="img/c4.jpg" alt="Цвет">
+											</div>
+
+											<div class="color-slider-item">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" name="optionsCheckboxes" >
+														<span class="c-name">Ольха <span class="c-count">(23)</span></span>
+													</label>
+												</div>
+												<img src="img/c1.jpg" alt="Цвет">
+											</div>
+
+											<div class="color-slider-item">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" name="optionsCheckboxes" >
+														<span class="c-name">Дуб седан <span class="c-count">(23)</span></span>
+													</label>
+												</div>
+												<img src="img/c2.jpg" alt="Цвет">
+											</div>
+
+											<div class="color-slider-item">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" name="optionsCheckboxes" >
+														<span class="c-name">Бук <span class="c-count">(23)</span></span>
+													</label>
+												</div>
+												<img src="img/c3.jpg" alt="Цвет">
+											</div>
+
+											<div class="color-slider-item">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" name="optionsCheckboxes" >
+														<span class="c-name">Белый дуб <span class="c-count">(23)</span></span>
+													</label>
+												</div>
+												<img src="img/c4.jpg" alt="Цвет">
+											</div>
 										</div>
 										<span class="prev"></span>
 										<span class="next"></span>
@@ -160,7 +204,7 @@
 								</div>
 
 								<div class="manuf">
-									<select class="selectpicker" data-style="btn btn-transparent" title="Single Select" data-size="7">
+									<select class="selectpicker" data-style="btn dropdown-toggle form-control" title="Single Select" data-size="7">
 										<option disabled selected>Производитель</option>
 										<option value="1">Производитель 1</option>
 										<option value="2">Производитель 2</option>
@@ -168,42 +212,49 @@
 
 									<div class="manuf-f-to">
 										<span class="manuf-t">Ширина полотна</span>
-										<span>от</span>
-										<div class="form-group mnf-f">
-											<input type="text" value="100" class="form-control" />
+										<div class="manuf-t-fl">
+											<span>от</span>
+											<div class="form-group mnf-f">
+												<input type="number" value="100" class="form-control" />
+											</div>
+											<span>до</span>
+											<div class="form-group mnf-f">
+												<input type="number" value="100 300" class="form-control" />
+											</div>
+											<span>см</span>
 										</div>
-										<span>до</span>
-										<div class="form-group mnf-f">
-											<input type="text" value="100 300" class="form-control" />
-										</div>
-										<span>см</span>
 									</div>
 
 									<div class="manuf-f-to">
 										<span class="manuf-t">Толщина</span>
-										<span>от</span>
-										<div class="form-group mnf-f">
-											<input type="text" value="100" class="form-control" />
+										<div class="manuf-t-fl">
+											<span>от</span>
+											<div class="form-group mnf-f">
+												<input type="number" value="100" class="form-control" />
+											</div>
+											<span>до</span>
+											<div class="form-group mnf-f">
+												<input type="number" value="100 300" class="form-control" />
+											</div>
+											<span>см</span>
 										</div>
-										<span>до</span>
-										<div class="form-group mnf-f">
-											<input type="text" value="100 300" class="form-control" />
-										</div>
-										<span>см</span>
 									</div>
 
-									<div class="manuf-f-to">
+									<div class="manuf-f-to bmnfbrbn">
 										<span class="manuf-t">Цена</span>
-										<span>от</span>
-										<div class="form-group mnf-f">
-											<input type="text" value="100" class="form-control" />
+										<div class="manuf-t-fl">
+											<span>от</span>
+											<div class="form-group mnf-f">
+												<input type="number" value="100" class="form-control" />
+											</div>
+											<span>до</span>
+											<div class="form-group mnf-f">
+												<input type="number" value="100 300" class="form-control" />
+											</div>
+											<span>см</span>
 										</div>
-										<span>до</span>
-										<div class="form-group mnf-f">
-											<input type="text" value="100 300" class="form-control" />
-										</div>
-										<span>см</span>
 									</div>
+
 
 									<div id="sliderDouble" class="slider slider-info"></div>
 
