@@ -158,3 +158,13 @@ $(".reg-tab-t").not(":first").hide();
 $(".reg-tab-i").click(function() {
 	$(".reg-tab-t").hide().eq($(this).index()).fadeIn()
 })
+
+$('.next-step').click(function() {
+	$(this).parent().parent().next('.reg-tab-t').fadeIn()
+	$(this).parent().parent().hide()
+})
+
+$('.prev-step').click(function() {
+	$(this).parent().parent().prev('.reg-tab-t').fadeIn()
+	$(this).parent().parent().hide()
+})
