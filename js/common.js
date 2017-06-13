@@ -3,14 +3,14 @@ $(function() {
 	//Кастомизированный Select
 	$('.slct, .reg-d').click(function(){
 		var dropBlock = $(this).parent().find('.drop');
-		
+
 		// Если выпадающий блок скрыт то делаем его видимым
 		if( dropBlock.is(':hidden') ) {
 			dropBlock.slideDown();
-			
-			//Выделяем ссылку открывающую select 
+
+			//Выделяем ссылку открывающую select
 			$(this).addClass('active');
-			
+
 			$('.drop li').click(function(){
 				var selectResult = $(this).html();
 				var selectVal = $(this).attr('data-value');
@@ -19,7 +19,7 @@ $(function() {
 				$(this).closest('div').find('input').val(selectVal);
 				dropBlock.slideUp();
 			});
-			
+
 		//Если выпадающий блок не скрыт то скрываем его
 		} else {
 			$(this).removeClass('active');
@@ -30,7 +30,7 @@ $(function() {
 
 	//Скрытие выпадашек при клике за ее пределами
 	$('body').mouseup( function(event){
-		if( $(event.target).closest('.drop_list').length || $(event.target).closest('.drop').length ) 
+		if( $(event.target).closest('.drop_list').length || $(event.target).closest('.drop').length )
 		return;
 		$('.drop_list').slideUp();
 		$('.drop').slideUp();
@@ -46,7 +46,7 @@ $(function() {
 
 		closeBtnInside: true,
 		preloader: false,
-		
+
 		midClick: true,
 		removalDelay: 300,
 		mainClass: 'my-mfp-zoom-in'
@@ -128,7 +128,7 @@ $(function() {
 	}
 
 	removeInput()
-	
+
 	// slick
 		$('.color-slider').slick({
 			vertical: true,
@@ -154,3 +154,7 @@ $(function() {
 		})
 });
 
+$(".reg-tab-t").not(":first").hide();
+$(".reg-tab-i").click(function() {
+	$(".reg-tab-t").hide().eq($(this).index()).fadeIn()
+})

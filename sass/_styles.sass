@@ -45,10 +45,22 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
+html, body
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	height: 100%
+	width: 100%
+
+.footdown
+	flex-grow: 1
+
 body
 	font-size: 16px
 	min-width: 320px
-	height: auto
 	position: relative
 	line-height: 1.75
 	font-family: $df
@@ -241,7 +253,7 @@ body
 		display: block
 		color: #000
 		padding: 0px 10px
-		&:first-child 
+		&:first-child
 			padding-top: 9px
 		&:last-child
 			padding-bottom: 9px
@@ -711,7 +723,7 @@ body
 		font-family: $dt
 		font-size: 14px
 		color: #fff
-#small-dialog 
+#small-dialog
 	background: white
 	padding: 20px 30px
 	text-align: left
@@ -2111,6 +2123,163 @@ textarea.msg-texta
 	justify-content: center
 	margin-top: 32px
 
+.reg-tab-t
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	justify-content: space-between
+.reg-form-modal
+	flex-basis: 320px
+	.reg-form-btn
+		width: 175px
+		padding-left: 16px
+		font-size: 12px
+		display: inline-block
+		.fa-angle-right
+			margin-left: 22px
+	.reg-form-btn-trns
+		background: transparent
+		box-shadow: none
+		border: none
+		color: #f99300
+		font-size: 12px
+		display: inline-block
+		&:focus
+			background: transparent
+			box-shadow: none
+			border: none
+			color: #f99300
+.reg-form-btn-end
+	width: 200px
+	padding-left: 16px
+	font-size: 12px
+	display: inline-block
+	.fa-angle-right
+		margin-left: 22px
+.mgt70
+	margin-top: 70px!important
+.mgt60
+	margin-top: 60px!important
+.mgt30
+	margin-top: 30px!important
+.mgt125
+	margin-top: 125px!important
+
+.reg-modal
+	.modal-body
+		padding-left: 50px
+		padding-right: 50px
+		padding-top: 5px
+		padding-bottom: 42px
+
+.reg-block-flex
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	align-items: center
+	height: 40px
+	margin-bottom: 22px
+	.form-group
+		width: 100%
+		>input
+			font-size: 14px
+			color: #aaa
+	.reg-block-icon-m
+		display: inline-block
+		width: 18px
+		height: 18px
+		background-image: url(../img/svg-icons/man.svg)
+		background-repeat: no-repeat
+		position: relative
+		top: -5px
+		margin-right: 14px
+	.reg-block-icon-l
+		display: inline-block
+		width: 18px
+		height: 18px
+		background-repeat: no-repeat
+		position: relative
+		top: -8px
+		margin-right: 14px
+		background-image: url(../img/svg-icons/loc.svg)
+	.reg-block-icon-p
+		display: inline-block
+		width: 24px
+		height: 21px
+		background-repeat: no-repeat
+		position: relative
+		top: -8px
+		margin-right: 8px
+		background-image: url(../img/svg-icons/phone.svg)
+	.reg-block-icon-em
+		display: inline-block
+		width: 23px
+		height: 21px
+		background-repeat: no-repeat
+		position: relative
+		top: -4px
+		margin-right: 9px
+		background-image: url(../img/svg-icons/mail.svg)
+	.reg-block-icon-lock
+		display: inline-block
+		width: 20px
+		height: 20px
+		background-repeat: no-repeat
+		position: relative
+		top: -4px
+		margin-right: 9px
+		background-image: url(../img/svg-icons/lock.svg)
+.reg-tabs
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-right: 3px
+	.reg-r-t
+		display: inline-block
+		font-size: 18px
+		color: #3c4858
+		line-height: 24px
+		width: 80%
+		text-align: center
+		margin-top: 20px
+	.reg-r-icon,
+	.reg-p-icon
+		display: block
+		width: 60px
+		height: 60px
+		background-image: url(../img/icon-sprite.png)
+		background-repeat: no-repeat
+		background-position: 0 -753px
+		margin-top: 38px
+	.reg-p-icon
+		background-position: 0 -823px
+	.reg-r-text
+			font-size: 13px
+			color: #3c4858
+			display: inline-block
+			margin-top: 10px
+	.tabs-circles
+		margin-top: 41px
+		.reg-tab-i
+			display: inline-block
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background-color: #e0e0e0
+			cursor: pointer
+			margin: 0 4px
+		.reg-active-tab
+			background-color: #f97806
+		.reg-previous-tab
+			border: 1px solid #f97806
+			background-color: #fff
+
 
 
 
@@ -2205,7 +2374,7 @@ textarea.msg-texta
 	white-space: nowrap
 	font-size: 13px
 	margin-left: 5px
-	list-style: 
+	list-style:
 	li
 		text-align: left
 		font-size: 13px

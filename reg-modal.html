@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Каталог Владельца</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header-flex-w">
+				<div class="logo-block">
+					<h1 class="logo">b2b.<span>cash</span></h1>
+					<span class="logo-d">Международная торговая площадка</span>
+				</div>
+
+				<div class="lang-block">
+					<a href="#" class="l-china t-sty">中國</a>
+					<a href="#" class="l-eng t-sty">English</a>
+					<a href="#" class="about t-sty">О площадке</a>
+				</div>
+
+				<div class="os-block">
+					<i class="fa fa-apple" aria-hidden="true"></i>
+					<i class="fa fa-android" aria-hidden="true"></i>
+				</div>
+
+				<ul class="acc-block">
+					<li class="log-in"><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Вход</a></li>
+					<li class="reg"><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Регистрация</a></li>
+					<li class="help"><a href="#"><i class="fa fa-question" aria-hidden="true"></i>Помощь</a></li>
+				</ul>
+			</div>
+
+			<div class="header-form-block">
+				<form action="#" class="header-form">
+					<div class="header-form-slct">
+						<a href="#" class="slct h-slct">Товар</a>
+						<ul class="drop h-drop">
+							<li data-value="1">Товар</li>
+							<li data-value="2">Таможня + логистика</li>
+							<li data-value="3">Логистика</li>
+						</ul>
+						<input type="hidden" name="search_type"  value="">
+					</div>
+
+					<input type="text" class="header-input" placeholder="Я ищу...">
+					<button type="submit" class="header-find-btn"><i class="fa fa-search" aria-hidden="true"></i>Найти</button>
+				</form>
+			</div>
+		</div>
+
+	</header>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog reg-modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					<i class="material-icons">clear</i>
+				</button>
+			</div>
+			<div class="modal-body">
+
+			    <div class="tab-content">
+			        <div class="reg-tab-t">
+								<form class="reg-form-modal">
+									<div class="reg-block-flex">
+										<span class="reg-block-icon-m"></span>
+										<div class="form-group label-floating">
+											<label class="control-label">Название компании</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+									<div class="reg-block-flex">
+										<span class="reg-block-icon-l"></span>
+										<div class="form-group label-floating">
+											<label class="control-label">Регион / Область</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+									<div class="reg-block-flex">
+										<span class="reg-block-icon-l"></span>
+										<div class="form-group label-floating">
+											<label class="control-label">Страна</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+									<button class="btn btn-primary reg-form-btn mgt70">Следующий шаг <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+								</form>
+
+								<div class="reg-tabs">
+										<h3 class="reg-r-t">Регистрация компании</h3>
+										<span class="reg-r-icon"></span>
+										<span class="reg-r-text">Данные о компании</span>
+										<div class="tabs-circles">
+											<span class="reg-tab-i reg-active-tab"></span>
+							        <span class="reg-tab-i"></span>
+							        <span class="reg-tab-i"></span>
+										</div>
+						    </div>
+			        </div>
+			        <div class="reg-tab-t">
+								<form class="reg-form-modal">
+									<div class="reg-block-flex">
+										<span class="reg-block-icon-m"></span>
+										<div class="form-group label-floating">
+											<label class="control-label">Фамилия</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+									<div class="reg-block-flex">
+										<span class="reg-block-icon-m"></span>
+										<div class="form-group label-floating">
+											<label class="control-label">Имя</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+									<div class="reg-block-flex">
+										<span class="reg-block-icon-m"></span>
+										<div class="form-group label-floating">
+											<label class="control-label">Отчество</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+									<div class="reg-block-flex">
+										<span class="reg-block-icon-p"></span>
+										<div class="form-group label-floating">
+											<label class="control-label">Телефон</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+									<div class="reg-block-flex">
+										<span class="reg-block-icon-em"></span>
+										<div class="form-group label-floating">
+											<label class="control-label">E-mail</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+									<button class="btn btn-primary reg-form-btn mgt30">Следующий шаг <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+									<button class="btn reg-form-btn-trns mgt30">Назад</button>
+								</form>
+
+								<div class="reg-tabs">
+										<h3 class="reg-r-t">Регистрация компании</h3>
+										<span class="reg-p-icon"></span>
+										<span class="reg-r-text">Персональные данные</span>
+										<div class="tabs-circles mgt125">
+											<span class="reg-tab-i reg-previous-tab"></span>
+							        <span class="reg-tab-i reg-active-tab"></span>
+							        <span class="reg-tab-i"></span>
+										</div>
+						    </div>
+			        </div>
+			        <div class="reg-tab-t">
+								<form class="reg-form-modal">
+									<div class="reg-block-flex">
+										<span class="reg-block-icon-lock"></span>
+										<div class="form-group label-floating">
+											<label class="control-label">Придумайте пароль</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+									<div class="reg-block-flex">
+										<span class="reg-block-icon-lock"></span>
+										<div class="form-group label-floating">
+											<label class="control-label">Повторите пароль</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<img src="img/captcha.png" alt="captcha">
+
+									<button class="btn btn-primary reg-form-btn-end mgt70">Завершить регистрацию</button>
+									<button class="btn reg-form-btn-trns mgt70">Назад</button>
+								</form>
+
+								<div class="reg-tabs">
+										<h3 class="reg-r-t">Регистрация компании</h3>
+										<span class="reg-p-icon"></span>
+										<span class="reg-r-text">Персональные данные</span>
+										<div class="tabs-circles mgt60">
+											<span class="reg-tab-i reg-previous-tab"></span>
+							        <span class="reg-tab-i reg-previous-tab"></span>
+							        <span class="reg-tab-i reg-active-tab"></span>
+										</div>
+						    </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="footdown"></div>
+
+	<footer class="footer">
+		<div class="footer-nav">
+			<div class="container">
+				<ul>
+					<li><a href="#">Каталог товаров</a></li>
+					<li><a href="#">Заводы-изготовители</a></li>
+					<li><a href="#">Поставщики</a></li>
+					<li><a href="#">Международная логистика</a></li>
+					<li><a href="#">Внутрироссийская логистика</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer_copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<p class="copyrigth_text"><span>©</span> 2011–2017 <a href="#">B2B.CASH</a></p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-3 col-md-2">
+						<ul class="footer_list">
+							<li>8 800 707-05-75</li>
+							<li class="mgb">Бесплатно по России</li>
+							<li>Служба техподдержки</li>
+							<li>info@stroytorgi.ru</li>
+							<li>+7 (495) 555-55-55</li>
+						</ul>
+					</div>
+					<div class="col-sm-push-1 col-sm-3 col-md-2">
+						<ul class="footer_list">
+							<li><a href="#">Регистрация на сайте</a></li>
+							<li><a href="#">Личный кабинет</a></li>
+							<li><a href="#">Участие в аукционах</a></li>
+							<li><a href="#">Часто задаваемые вопросы</a></li>
+							<li><a href="#">Помощь</a></li>
+							<li><a href="#">Техподдержка</a></li>
+							<li><a href="#">Документы</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
